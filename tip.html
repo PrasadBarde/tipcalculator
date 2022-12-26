@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tip.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Tip Calculator</h2>
+    <div id="main">
+        <div class="tipCalculator">
+            <div id="bill" class="sub-container">
+                <label for="Amount">Bill</label>
+            <input type = "number" name="Amount" id="bills" placeholder="0"/>
+            </div>
+            <div id="tip" class="sub-container">
+                <label for="">Tip</label>
+                <select name="tip" id="select">
+                    <option value="custom">Custom</option>
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="25">25%</option>
+                    <option value="50">50%</option>
+                </select>  
+            </div>
+            <div  class="sub-container">
+                <label for="Amount">No of peoples</label>
+                <input type = "number" id="peoples" name="Amount" placeholder="0" />
+            </div>
+            
+            <button id="calculate" onclick="calculte()">Calculate</button>
+    
+        </div>
+        <div class="tip-amt">
+            <div class="value" >
+                <h2>Tip Amount/Person = $</h2>
+                <h2 id="ans1">10</h2>
+            </div>
+            
+            <div class="value" >
+                <h2>Total/Person = $</h2>
+                <h2 id="ans2">110</h2>
+            </div>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    
+</body>
+<script src="./tip.js"></script>
+</html>
